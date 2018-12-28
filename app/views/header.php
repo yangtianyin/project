@@ -5,4 +5,7 @@
     <link rel="stylesheet" href="/static/css/main.css" type="text/css" />
 </head>
 <body>
-    <h1><?php echo $title ?></h1>
+    
+<center>
+    <div>
+        <h1><?php echo $title ?></h1>

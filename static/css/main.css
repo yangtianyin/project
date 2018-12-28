@@ -23,8 +23,31 @@ a:hover {
 
 h1 {
     color:#000000;
-    font-size:41px;
+    font-size:31px;
     border-bottom:1px dotted #cccccc;
 }
 
 td {padding: 1px 30px 1px 0;}
+
+table.gridtable {
+      font-family: verdana,arial,sans-serif;
+      font-size:11px;
+      color:#333333;
+      border-width: 1px;
+      border-color: #666666;
+      border-collapse: collapse;
+ }
+ table.gridtable th {
+     border-width: 1px;
+     padding: 8px;
+     border-style: solid;
+     border-color: #666666;
+     background-color: #dedede;
+ }
+ table.gridtable td {
+     border-width: 1px;
+     padding: 8px;
+     border-style: solid;
+     border-color: #666666;
+     background-color: #ffffff;
+ }

@@ -28,6 +28,7 @@ class ItemController extends Controller
     // 查看单条记录详情
     public function detail($id)
     {
+        var_dump($id);
         // 通过?占位符传入$id参数
         $item = (new Item())->where(["id = ?"], [$id])->fetch();
 
@@ -75,10 +76,15 @@ class ItemController extends Controller
     // 删除记录，测试框架DB记录删除（Delete）
     public function delete($id = null)
     {
+        var_dump($id);
         $count = (new Item)->delete($id);
 
         $this->assign('title', '删除成功');
         $this->assign('count', $count);
+        $this->render();
+    }
+    public function show(){
+        $this->assign('title', '全部条目');
         $this->render();
     }
 }
